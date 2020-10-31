@@ -6,6 +6,10 @@ h1{
     font-size: 40px;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-color: blueviolet;
     color: whitesmoke;
@@ -40,8 +44,9 @@ th,td{
 }
 
 footer{
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    left: 0;
     bottom: 0;
-    height: 30px;
+    width: 100%;
+    background-color: black;
 }
