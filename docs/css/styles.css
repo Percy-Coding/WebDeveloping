@@ -1,52 +1,167 @@
-h1{
-    text-align: center;
-    color: aquamarine;
-    background-color: darkred;
-    padding: 10px;
-    font-size: 40px;
-}
 
-html{
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap');
+
+html,body{
     height: 100%;
-}
-
-body{
-    background-color: blueviolet;
-    color: whitesmoke;
-}
-
-ol{
-    font-size: 25px;
-}
-
-.container{
-    height: 200px;
-}
-
-.center{
-    text-align: center;
-    font-size: 30px;
-}
-
-table{
-    border: 3px solid red;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px;
-}
-
-th,td{
-    border: 1px solid springgreen;
-    padding: 5px;
-    margin: 5px;
-
-}
-
-footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: black;
+    scroll-behavior: smooth;
 }
+
+li,a,button{
+    font-family: "Grandstander",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #101010;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+   
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #00ffa9;
+}
+
+header button{
+    padding: 9px 25px;
+    background-color: rgba(0, 146, 169, 1);
+    border: none;
+    border-radius:  50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover{
+    background-color: rgba(0, 146, 169, 0.8);
+}
+
+#presentation {
+    background: url("../img/elevatorfull.jpg") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.landing-text h1{
+    font-size: 500%;
+    font-weight: 700;
+    color: wheat;
+}
+
+.landing-text h3{
+    font-size: 250%;
+    font-weight: 300;
+    color: blanchedalmond;
+}
+
+@media (max-width: 840px){
+    .landing-text h1{
+        font-size: 150%;
+    }
+    .landing-text h3{
+        font-size: 100%;
+        font-weight: 200;
+    }
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    padding: 10px 20px;
+    
+}
+
+.mision{
+    background-color: skyblue;
+}
+.vision{
+    background-color: springgreen;
+}
+
+.content div{
+    flex: 1;
+} 
+.content h1{
+    font-weight: 300;
+    font-size: 300%;
+}
+
+.content pre{
+    font-size: 150%;
+}
+
+#nosotros{
+    display: flex;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: tomato;
+}
+
+#nosotros div{
+    flex: 1;
+    font-size: 150%;
+}
+
+#nosotros strong{
+    font-size: 200%;
+    color: green;
+}
+footer{
+    display: flex;
+    width: 100%;
+    background-color: skyblue;
+    padding: 5% 5% 10% 5;
+    color: #000;
+    
+}
+
+.main-footer{
+    flex: 2;
+    padding: 20px 10px;
+}
+
+.secondary-footer{
+    flex: 1;
+}
+.fa{
+    padding: 15px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.fa:hover{
+    color: #D5D5D5;
+    text-decoration: none;
+}
+
